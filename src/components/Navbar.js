@@ -32,16 +32,14 @@ function Navbarr({ setPage }) {
             <button onClick={handleClick}>search</button>
           </form>
         </div>
-        {ismenuopen ? (
-          <div className="menu">
-            <NavLink to="/" className="nav-link">
-              <span>STORE</span>
-            </NavLink>
-            <NavLink to="/AddBook" className="nav-link">
-              <span>Add Book</span>
-            </NavLink>
-          </div>
-        ) : null}
+        <div className="menu">
+          <NavLink to="/" className="nav-link">
+            <span>STORE</span>
+          </NavLink>
+          <NavLink to="/AddBook" className="nav-link">
+            <span>Add Book</span>
+          </NavLink>
+        </div>
       </nav>
     </>
   );

@@ -11,8 +11,6 @@ import {
 } from "./reducers/booksReducers";
 
 const BookProvider = (props) => {
-  const [retId, setRetId] = useState(null);
-  const [isEdit, setIsEdit] = useState(false);
   const dispatch = useDispatch();
   const addBook = async (values) => {
     try {
@@ -59,8 +57,7 @@ const BookProvider = (props) => {
   const contextValue = {
     fetchBooks: fetchBooks,
     editBook: editBook,
-    retId: retId,
-    setRetId: setRetId,
+
     addBook: addBook,
   };
   useEffect(() => {

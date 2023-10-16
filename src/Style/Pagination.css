@@ -1,0 +1,35 @@
+.pagin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #171717;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pageArray {
+  display: flex;
+}
+
+.pageArray div {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pageArray div.current-page {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #3498db;
+}
